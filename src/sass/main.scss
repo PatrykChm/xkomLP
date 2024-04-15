@@ -197,6 +197,98 @@ body {
 		}
 	}
 }
+// END OF "HOWTO" STYLES
+.laptops {
+	&__container {
+		// display: flexgulp;
+		// Styles of ALL CARD
+		.laptop__card {
+			border-radius: 40px;
+			padding: 25px;
+			background-color: #fff;
+			display: flex;
+			flex-direction: column;
+			max-width: 430px;
+			width: 90%;
+			margin: 0 auto;
+			margin-top: 50px;
+			cursor: pointer;
+			transition: box-shadow 0.2s;
+
+			// Styles of LAPTOP photo
+			&__photo {
+				margin-bottom: 5px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: 80%;
+				}
+			}
+			// Styles of laptop TITLE
+			&__title {
+				p {
+					font-weight: 300;
+					line-height: 150%;
+					font-size: 18px;
+					margin-bottom: 15px;
+				}
+			}
+			// Styles of laptop SPECS
+			&__spec {
+				table {
+					margin-bottom: 15px;
+					width: 100%;
+					tr {
+						font-size: 14px;
+						th {
+							text-align: left;
+						}
+						td {
+							text-align: right;
+						}
+					}
+				}
+			}
+
+			// Styles of laptop PRICE
+			&__prices {
+				display: flex;
+				justify-content: space-evenly;
+				font-size: 22px;
+				margin-bottom: 25px;
+
+				.old_price {
+					font-weight: 200;
+				}
+				.new_price {
+					font-weight: 500;
+				}
+			}
+
+			// Styles of BUTTON "sprawdź"
+			button {
+				width: 50%;
+				margin: 0 auto;
+				padding: 13px 5px;
+				border-radius: 25px;
+				font-size: 16px;
+				font-weight: 300;
+				transition: background-color 0.3s;
+				cursor: pointer;
+				border: none;
+				background-color: #742cfa;
+				color: #fff;
+			}
+			button:hover {
+				background-color: #8d5fe2;
+			}
+		}
+		.laptop__card:hover {
+			box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+		}
+	}
+}
 
 // Breakpointy -----------------------------------------------------------------------
 
