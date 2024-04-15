@@ -8,6 +8,9 @@ html {
 	scroll-behavior: smooth;
 	font-family: 'Montserrat', sans-serif;
 }
+body {
+	background-color: #eeeeee;
+}
 
 // HEADER STYLES
 .header {
@@ -73,6 +76,9 @@ html {
 // FIRST INFO STYLES
 .first-info {
 	padding: 15px;
+	max-width: 1340px;
+	margin-left: auto;
+	margin-right: auto;
 
 	// header of section styles
 	&__header {
@@ -94,11 +100,12 @@ html {
 		}
 	}
 
+	// green splitter styles
 	.splitter {
 		width: 60%;
-        max-width: 300px;
+		max-width: 300px;
 		height: 8px;
-		margin: 15px 0;
+		margin: 20px 0;
 		background-color: #56b472;
 	}
 
@@ -108,11 +115,13 @@ html {
 		flex-direction: column;
 		padding-top: 20px;
 		gap: 15px;
+		align-items: center;
 
 		.card {
 			min-height: 320px;
 			max-width: 600px;
 			border-radius: 25px;
+			width: 100%;
 		}
 
 		.card-one {
@@ -188,6 +197,32 @@ html {
 					font-size: 26px;
 					line-height: 160%;
 				}
+			}
+		}
+	}
+
+	.first-info {
+		padding: 25px;
+		&__header {
+			h2 {
+				font-size: 28px;
+			}
+		}
+		&__text {
+			max-width: 80%;
+			font-size: 22px;
+			line-height: 170%;
+		}
+
+		.cards {
+			flex-direction: row;
+
+			.card {
+				width: 40%;
+			}
+			.card-two {
+				width: 60%;
+				padding: 10px;
 			}
 		}
 	}
