@@ -281,4 +281,57 @@ body {
 			}
 		}
 	}
+
+	.howto {
+		max-width: 800px;
+		margin: 0 auto;
+		margin-top: 20px;
+		h3 {
+			font-size: 28px;
+		}
+
+		.steps {
+			.step {
+				font-size: 18px;
+				img {
+					max-height: 65px;
+				}
+			}
+
+			.step-two {
+				button {
+					padding: 13px 27px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+// BP 1200PX
+@media (min-width: 1200px) {
+	.howto {
+		max-width: 1300px;
+
+		.steps {
+			flex-direction: row;
+			justify-content: center;
+			align-items: baseline;
+
+			.step {
+				width: 33%;
+				margin-bottom: 10px;
+
+				img {
+					margin-bottom: 15px;
+				}
+			}
+
+			.step-two {
+				button {
+					margin-top: 20px;
+				}
+			}
+		}
+	}
 }
