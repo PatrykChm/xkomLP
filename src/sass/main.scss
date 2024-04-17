@@ -200,7 +200,9 @@ body {
 // END OF "HOWTO" STYLES
 .laptops {
 	&__container {
-		// display: flexgulp;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 		// Styles of ALL CARD
 		.laptop__card {
 			border-radius: 40px;
@@ -210,7 +212,6 @@ body {
 			flex-direction: column;
 			max-width: 430px;
 			width: 90%;
-			margin: 0 auto;
 			margin-top: 50px;
 			cursor: pointer;
 			transition: box-shadow 0.2s;
@@ -398,6 +399,20 @@ body {
 			}
 		}
 	}
+
+	.laptops {
+		&__container {
+			flex-direction: row;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			width: 100%;
+
+			.laptop__card {
+				margin-top: 25px;
+				width: 45%;
+			}
+		}
+	}
 }
 
 // BP 1200PX
@@ -423,6 +438,20 @@ body {
 				button {
 					margin-top: 20px;
 				}
+			}
+		}
+	}
+
+	.laptops {
+		&__container {
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 100%;
+			margin-top: 10px;
+
+			.laptop__card {
+				margin-top: 25px;
+				width: 23%;
 			}
 		}
 	}
